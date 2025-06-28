@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Honk|Leckerli One|Lemon|Oregano|Yatra One|Rubik Maps">
+    <title>Emergency Delivery - AMR Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8faff;
+        }
+        header {
+            background-color: #0074D9;
+            padding: 20px;
+            color: white;
+            text-align: center;
+			font-family:Rubik Maps;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #003366;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #e6f7ff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #0074D9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+			font-family:Leckerli one;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Emergency Delivery Request - AMR Agency</h1>
+    </header>
+
+    <nav>
+        <a href="p3home.html">Home</a>
+        <a href="p3products.html">Products</a>
+        <a href="p3order.html">Order</a>
+        <a href="p3delivery.html">Delivery Info</a>
+        <a href="p3about.html">About Us</a>
+        <a href="p3contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <h2 style="text-shadow:2px 3px 9px blue;font-family:Yatra One;">Need Water Urgently? We’ve Got You Covered!</h2>
+        <p>Fill out the form below to request an emergency delivery.</p>
+    </section>
+
+    <form action="/p3emergency-delivery.html" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+        <label for="address">Delivery Address:</label>
+        <input type="text" id="address" name="address" required placeholder="Enter your delivery address">
+
+        <label for="quantity">Number of Water Cans (20L):</label>
+        <select id="quantity" name="quantity" required>
+            <option value="">Select Quantity</option>
+            <option value="1">1 Can</option>
+            <option value="2">2 Cans</option>
+            <option value="3">3 Cans</option>
+            <option value="5">5 Cans</option>
+            <option value="10">10 Cans</option>
+        </select>
+
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <footer>
+        <p>Contact us at: anandakumarsmart@gmail.com | Phone: 9042333354</p>
+        <p>© 2025 AMR Agency. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

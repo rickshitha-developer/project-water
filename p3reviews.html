@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Honk|Leckerli One|Lemon|Oregano|Yatra One|Rubik Maps">
+    <title>Customer Reviews - AMR Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8faff;
+        }
+        header {
+            background-color: #0074D9;
+            padding: 20px;
+            color: white;
+            text-align: center;
+			font-family:Rubik Maps;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #003366;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #0074D9;
+            color: white;
+        }
+        td {
+            background-color: #e6f7ff;
+        }
+        form {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #0074D9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+			font-family:Leckerli one;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Customer Reviews - AMR Agency</h1>
+    </header>
+
+    <nav>
+        <a href="p3home.html">Home</a>
+        <a href="p3products.html">Products</a>
+        <a href="p3order.html">Order</a>
+        <a href="p3delivery.html">Delivery Info</a>
+        <a href="p3about.html">About Us</a>
+        <a href="p3contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <h2 style="text-shadow:2px 3px 9px blue;font-family:Yatra One;">What Our Customers Say</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Review</th>
+                <th>Rating (Stars)</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>The water quality is excellent, and delivery is always on time. Highly recommend!</td>
+                <td>★★★★★</td>
+            </tr>
+            <tr>
+                <td>Priya Sharma</td>
+                <td>Great service! I’m very happy with the subscription plan I chose.</td>
+                <td>★★★★☆</td>
+            </tr>
+            <tr>
+                <td>Vikram Raj</td>
+                <td>Emergency delivery saved the day for us during a family gathering. Thank you, AMR Agency!</td>
+                <td>★★★★★</td>
+            </tr>
+            <tr>
+                <td>Aarav Gupta</td>
+                <td>The bulk order option helped our office manage water supplies easily. Excellent pricing and service!</td>
+                <td>★★★★★</td>
+            </tr>
+            <tr>
+                <td>Sneha Iyer</td>
+                <td>The flavored water is refreshing and unique. We enjoy the lemon and mint options.</td>
+                <td>★★★★☆</td>
+            </tr>
+            <tr>
+                <td>Manoj Kumar</td>
+                <td>Very reliable service with courteous staff. I have been a customer for 2 years now.</td>
+                <td>★★★★★</td>
+            </tr>
+            <tr>
+                <td>Divya Menon</td>
+                <td>Ordering is easy, and deliveries are always on time. Perfect for home use!</td>
+                <td>★★★★☆</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Submit Your Review</h2>
+        <form action="/p3reviews.html" method="POST">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <textarea name="review" placeholder="Write your review here..." rows="4" required></textarea>
+            <label for="rating">Rating:</label>
+            <select name="rating" id="rating" required>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us at: anandakumarsmart@gmail.com | Phone: 9042333354</p>
+        <p>© 2025 AMR Agency. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

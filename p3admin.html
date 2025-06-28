@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page - AMR Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8faff;
+        }
+        header, footer {
+            background-color: #0074D9;
+            color: white;
+            text-align: center;
+            padding: 20px;
+			
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+        nav a:hover {
+            background-color: #003366;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #0074D9;
+            color: white;
+        }
+        td {
+            background-color: #e6f7ff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Admin Dashboard - AMR Agency</h1>
+    </header>
+
+    <nav>
+        <a href="p3home.html">Home</a>
+        <a href="p3products.html">Products</a>
+        <a href="p3order.html">Order</a>
+        <a href="p3reviews.html">Customer Reviews</a>
+        <a href="p3bulk-orders.html">Bulk Orders</a>
+        <a href="p3delivery.html">Delivery Info</a>
+    </nav>
+
+    <section>
+        <h2>View and Manage Records</h2>
+
+        <h3>Bulk Orders:</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Message</th>
+            </tr>
+            {% for order in bulk_orders %}
+            <tr>
+                <td>{{ order.name }}</td>
+                <td>{{ order.company }}</td>
+                <td>{{ order.email }}</td>
+                <td>{{ order.phone }}</td>
+                <td>{{ order.product }}</td>
+                <td>{{ order.quantity }}</td>
+                <td>{{ order.message }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        
+        <h3>Customer Reviews:</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Review</th>
+                <th>Rating</th>
+            </tr>
+            {% for review in reviews %}
+            <tr>
+                <td>{{ review.name }}</td>
+                <td>{{ review.review }}</td>
+                <td>{{ review.rating }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+		<h3>Emergency Delivery Requests:</h3>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Product</th>
+        <th>Quantity</th>
+    </tr>
+    {% for delivery in emergency_deliveries %}
+    <tr>
+        <td>{{ delivery.name }}</td>
+        <td>{{ delivery.email }}</td>
+        <td>{{ delivery.phone }}</td>
+        <td>{{ delivery.address }}</td>
+        <td>{{ delivery.product }}</td>
+        <td>{{ delivery.quantity }}</td>
+    </tr>
+    {% endfor %}
+</table>
+		<h3>Contact Messages:</h3>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Message</th>
+    </tr>
+    {% for contact in contact_messages %}
+    <tr>
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.email }}</td>
+        <td>{{ contact.message }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+    </section>
+
+    <footer>
+        <p>Admin access - View and manage customer orders and feedback.</p>
+    </footer>
+
+</body>
+</html>

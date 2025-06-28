@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Honk|Leckerli One|Lemon|Oregano|Yatra One|Rubik Maps">
+    <title>Contact Us - AMR Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8faff;
+        }
+        header {
+            background-color: #0074D9;
+            padding: 20px;
+            color: white;
+            text-align: center;
+			font-family:Rubik Maps;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #003366;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #e6f7ff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #0074D9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+				font-family:Leckerli one;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact AMR Agency</h1>
+    </header>
+
+    <nav>
+        <a href="p3home.html">Home</a>
+        <a href="p3products.html">Products</a>
+        <a href="p3order.html">Order</a>
+        <a href="p3delivery.html">Delivery Info</a>
+        <a href="p3about.html">About Us</a>
+    </nav>
+
+    <section>
+        <h2 style="text-shadow:2px 3px 9px blue; font-family:Yatra One">We’d Love to Hear From You!</h2>
+        <p>Have questions, feedback, or service requests? Fill out the form below, and we’ll get back to you as soon as possible.</p>
+    </section>
+
+    <form action="/p3contact.html" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p>Contact us at: anandakumarsmart@gmail.com | Phone: 9042333354</p>
+        <p>© 2025 AMR Agency. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

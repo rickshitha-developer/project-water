@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking - AMR Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8faff;
+        }
+        header {
+            background-color: #0074D9;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #003366;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #0074D9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Order Tracking - AMR Agency</h1>
+    </header>
+
+    <nav>
+        <a href="p3home.html">Home</a>
+        <a href="p3products.html">Products</a>
+        <a href="p3order.html">Order</a>
+        <a href="p3reviews.html">Customer Reviews</a>
+        <a href="p3bulk-orders.html">Bulk Orders</a>
+        <a href="p3delivery.html">Delivery Info</a>
+    </nav>
+
+    <section>
+        <h2>Track Your Order</h2>
+        <p>Enter your order ID and contact information to track the status of your order.</p>
+
+        <form action="/p3order-tracking" method="POST">
+            <input type="text" name="order_id" placeholder="Enter your Order ID" required>
+            <input type="text" name="email" placeholder="Enter your Email" required>
+            <input type="text" name="phone" placeholder="Enter your Phone Number" required>
+
+            <button type="submit">Track Order</button>
+        </form>
+
+        <div id="tracking-result">
+            <h3>Order Status:</h3>
+            <p>{{ order_status }}</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact us at: anandakumarsmart@gmail.com | Phone: 9042333354</p>
+        <p>© 2025 AMR Agency. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

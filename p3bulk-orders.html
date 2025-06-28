@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Honk|Leckerli One|Lemon|Oregano|Yatra One|Rubik Maps">
+    <title>Bulk Orders - AMR Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8faff;
+        }
+        header {
+            background-color: #0074D9;
+            padding: 20px;
+            color: white;
+            text-align: center;
+			font-family:Rubik Maps;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #003366;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #0074D9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+			font-family:Leckerli one;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bulk Orders - AMR Agency</h1>
+    </header>
+
+    <nav>
+        <a href="p3home.html">Home</a>
+        <a href="p3products.html">Products</a>
+        <a href="p3order.html">Order</a>
+        <a href="p3reviews.html">Customer Reviews</a>
+        <a href="p3delivery.html">Delivery Info</a>
+        <a href="p3about.html">About Us</a>
+        <a href="p3contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <h2 style="text-shadow:2px 3px 9px blue;font-family:Yatra One;">Place a Bulk Order</h2>
+        <p>For bulk orders, please fill out the form below. Our team will contact you shortly to confirm the order details.</p>
+
+        <form action="/p3bulk-orders.html" method="POST">
+            <input type="text" name="name" placeholder="Enter your full name" required>
+            <input type="text" name="company" placeholder="Enter company name (if any)">
+            <input type="text" name="email" placeholder="Enter your email address" required>
+            <input type="text" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="product">Select Product:</label>
+            <select name="product" id="product" required>
+                <option value="20L Water Cans">20L Water Cans</option>
+                <option value="5L Water Cans">5L Water Cans</option>
+                <option value="Water Cases">Water Cases</option>
+                <option value="Juice Cases">Juice Cases</option>
+                <option value="Flavored Water">Flavored Water</option>
+                <option value="Water Can Covers">Water Can Covers</option>
+                <option value="Water Manual Pumps">Water Manual Pumps</option>
+            </select>
+
+            <input type="number" name="quantity" placeholder="Enter quantity" min="1" required>
+
+            <textarea name="message" placeholder="Additional instructions or message (optional)" rows="4"></textarea>
+
+            <button type="submit">Place Bulk Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us at: anandakumarsmart@gmail.com | Phone: 9042333354</p>
+        <p>© 2025 AMR Agency. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
